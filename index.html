@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amugus shooter</title>
+    <script src="d3.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/gentil.png" type="image/png">
+
+    <style>
+        body{
+            margin:0;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    
+        <!-- Projet de Laza Lucas et Viry Corentin -->
+    
+    <div class="svgarea">
+        <svg viewbox="0 0 200 150"  style="background-color:rgb(209, 209, 209)">
+            
+                <defs>
+					<linearGradient id="gradient-fill" x1="0" y1="0" x2="50" y2="0" gradientUnits="userSpaceOnUse">
+						
+							
+                        <stop offset="0" stop-color="#838383" />
+						
+							<stop offset="0.2" stop-color="#8d8b8e" />
+						
+							<stop offset="0.4" stop-color="#96939a" />
+						
+							<stop offset="0.6000000000000001" stop-color="#a09ba5" />
+						
+							<stop offset="0.8" stop-color="#aaa3b1" />
+						
+							<stop offset="1" stop-color="#b4abbd" />
+						
+					</linearGradient>
+				</defs>
+        
+            
+        
+        
+            <rect class="plage" x="0" y="0" width="25%" height="100%" fill="url(#gradient-fill)"/>
+        
+            <rect x="25%" y="0" width="75%" height="100%" fill="#10001a"/>
+
+
+
+            <circle cx="150" cy="100" r="0.5" fill="white" />
+            <circle cx="100" cy="150" r="0.2" fill="white" />
+            <circle cx="65" cy="80" r="0.3" fill="white" />
+            <circle cx="180" cy="20" r="0.1" fill="white" />
+            <circle cx="160" cy="120" r="0.2" fill="white" />
+            <circle cx="135" cy="45" r="0.3" fill="white" />
+            <circle cx="79" cy="112" r="0.5" fill="white" />
+            <circle cx="120" cy="10" r="0.4" fill="white" />
+
+        
+
+        </svg>
+    </div>
+    
+    
+    <h3 style="color:white; padding-left: 2vw;">A game by Laza Lucas and Viry Corentin</h3>
+
+    <div class="rules"><div class="p">
+        <h2>Rules:</h2><p> You are the white AMUGUS. Kill all the bad amugus and do not let them come on your ship ! <br> Take care, you ennemies can defend themselves ! Do not tuch their red goo, or else you will die.</p>
+    </div></div>
+    
+</div>
+<div class="modalePause"><h1>Pause</h1><h2>Press "space" to resume</h2><div class="pause"></div></div>
+<div class="modaleOrientation"><h2>For playing, please rotate your device to Landscape mode.</h2></div>
+<div class="modaleMobile"><h2>The game is not available on mobile devices. Please play on a computer</h2></div>
+<div class="gOcache" style="display:none"><div><h2>You got ejected by your ennemies !</h2><div class="yourscore"></div><img src="img/gentil.png" alt=""><div class="boutonRejouer"><p>Play again</p></div></div></div>
+
+<script src="script.js"></script>
+</body>
+</html>
